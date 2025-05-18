@@ -1,4 +1,4 @@
-import { FaRegCircleCheck } from 'react-icons/fa6';
+import { FaRegCircleCheck } from 'react-icons/fa';
 import s from './FeaturesCarList.module.css';
 
 const FeaturesCarList = ({ title, items }) => {
