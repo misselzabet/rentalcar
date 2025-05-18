@@ -1,0 +1,104 @@
+.carItem {
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 32px) / 2);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: calc((100% - 64px) / 3);
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: calc((100% - 96px) / 4);
+    }
+}
+
+.image {
+    margin-bottom: 16px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.titleContainer {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.model {
+    color: var(--button);
+}
+
+.info {
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 4px;
+    min-height: 40px;
+}
+
+.infoText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    text-transform: none;
+    color: var(--gray);
+}
+
+.button {
+    margin-top: auto;
+    padding: 12px 97px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    border: none;
+    border-radius: 12px;
+    color: var(--white);
+    background-color: var(--button);
+    transition: background-color var(--time) var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--blue);
+    }
+}
+
+.buttonHeart {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    background-color: transparent;
+    border: none;
+    width: 16px;
+    height: 16px;
+}
+
+.disabled {
+    width: 20px;
+    height: 20px;
+    transition: fill var(--time) var(--cubic);
+    fill: var(--white);
+}
+
+.disabled:hover {
+    color: var(--button);
+}
+
+.active {
+    width: 20px;
+    height: 20px;
+    color: var(--button);
+}
+
+.readMoreBtn {
+    width: 100%;
+    text-align: center;
+}
