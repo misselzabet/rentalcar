@@ -1,37 +1,24 @@
 .listContainer {
-    &:not(:last-child) {
-        margin-bottom: 40px;
-    }
-    @media screen and (min-width: 768px) {
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-
-        flex: 1 1 300px;
-        max-width: 50%;
-    }
-
-    @media screen and (min-width: 1280px) {
-        max-width: 100%;
-        flex: 0;
-    }
+    padding: 16px;
 }
 
 .subtitle {
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    list-style: none;
+    padding: 0;
 }
 
 .item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.item p {
+    margin-left: 8px;
 }
