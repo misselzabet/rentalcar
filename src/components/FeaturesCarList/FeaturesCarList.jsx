@@ -1,4 +1,4 @@
-import { FaRegCircleCheck } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa'; // Використай існуючу іконку
 import s from './FeaturesCarList.module.css';
 
 const FeaturesCarList = ({ title, items }) => {
@@ -8,7 +8,7 @@ const FeaturesCarList = ({ title, items }) => {
             <ul className={s.list}>
                 {items.map((text, index) => (
                     <li className={s.item} key={index}>
-                        <FaRegCircleCheck />
+                        <FaCheckCircle />
                         <p>{text}</p>
                     </li>
                 ))}
