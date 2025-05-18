@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import CarSpecifications from '../CarSpecifications/CarSpecifications';
 
 import Loader from '../Loader/Loader';
 import CarInfo from '../CarInfo/CarInfo';
