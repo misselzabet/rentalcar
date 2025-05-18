@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 import CarInfo from '../CarInfo/CarInfo';
 import BookingForm from '../BookingForm/BookingForm';
-import FeaturesCarList from '../FeaturesCarList';import CarSpecifications from '../CarSpecifications/CarSpecifications';
+import FeaturesCarList from '../FeaturesCarList/FeaturesCarList';import CarSpecifications from '../CarSpecifications/CarSpecifications';
 
 import { selectCarDetails, selectIsLoading } from '../../redux/cars/selectors';
 import { getCarDetails } from '../../redux/cars/operations';
